@@ -1,6 +1,5 @@
 import Nav from "./Nav";
 import "../Sass/Header.scss";
-import style from "../Sass/Header.module.scss";
 import img from "../assets/Logos/HeaderLogo.png";
 import { Link } from "react-router-dom";
 

@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.name {
+.collapseHeaderName {
   margin: 0 10px;
   display: flex;
   color: white;
@@ -40,7 +40,7 @@
   transform: rotate(180deg);
 }
 
-.content {
+.collapseHeaderContent {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 20px 20px;

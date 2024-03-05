@@ -1,5 +1,4 @@
 import "../Sass/Carrousel.scss";
-import style from "../Sass/Carrousel.module.css";
 import React, { useState } from "react";
 import left from "../assets/pictures/leftArrow.png";
 import right from "../assets/pictures/rightArrow.png";
@@ -31,19 +30,19 @@ export default function Carrousel({ pictures, title }) {
 
   return (
     <div className="carrousel">
-      <img className="coverImgCarrousel" src={pictures[index]} alt={title} />
-      <img
-        className="prev displayArrow"
+      <img className="carrouselCoverImg" src={pictures[index]} alt={title} />
+      <button
+        className={`prev ${displayArrow}`}
         src={left}
         onClick={handlePrevious}
-        alt="Previous "
+        alt="Previous"
       />
       <div className={displayCounter}>{counter}</div>
-      <img
-        className="next displayArrow"
+      <button
+        className={`next ${displayArrow}`}
         src={right}
         onClick={handleNext}
-        alt="Next "
+        alt="Next"
       />
     </div>
   );

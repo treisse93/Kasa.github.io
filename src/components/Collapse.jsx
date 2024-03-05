@@ -1,7 +1,8 @@
+import React from "react";
 import { useState } from "react";
 import arrowUp from "../assets/pictures/ArrowUp.png";
 import "../Sass/Collapse.scss";
-
+import PropTypes from "prop-types";
 // Affiche un élément pouvant être replié/déplié
 export default function Collapse({ content, name, type }) {
   const [Toggle, setToggle] = useState({
@@ -23,20 +24,16 @@ export default function Collapse({ content, name, type }) {
 
   // Déterminer la classe en fonction du type passé en prop
   const styleType =
-    type === "large"
-      ? "large"
-      : type === "medium"
-        ? "medium"
-        : "small";
+    type === "large" ? "large" : type === "medium" ? "medium" : "small";
 
   return (
     <div className={styleType}>
       <div onClick={handleCollapse} className="collapseHeader">
-        <p className="name">{name}</p>
+        <p className="collapseHeaderName">{name}</p>
         <img className={clsName} src={arrowUp} alt="Collapse" />
       </div>
       {Toggle.state && (
-        <div className="content">
+        <div className="collapseHeaderContent">
           {/* Affiche le contenu s'il est déplié */}
           {content.map((element, index) => (
             <p key={index} className="listItem">
@@ -48,3 +45,9 @@ export default function Collapse({ content, name, type }) {
     </div>
   );
 }
+
+Collapse.propTypes = {
+  content: PropTypes.array,
+  name: PropTypes.string,
+  type: PropTypes.string,
+};
