@@ -1,4 +1,5 @@
 import "../Sass/Cover.scss";
+import PropTypes from "prop-types";
 
 //affiche une couverture avec un titre et une image
 export default function Cover({ type, title, img }) {
@@ -16,3 +17,9 @@ export default function Cover({ type, title, img }) {
     </section>
   );
 }
+
+Cover.propTypes = {
+  type: PropTypes.string,
+  title: PropTypes.string,
+  img: PropTypes.string,
+};

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="containerFooter">
       <img
-        className="LogoFooter"
+        className="containerFooterLogo"
         src={img}
         alt="Logo de Kaza en blanc sur fond noir"
       />

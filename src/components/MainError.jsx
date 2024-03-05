@@ -10,7 +10,7 @@ export default function MainErrorPage() {
         <p className="mainComponentMsgOups">Oups! La page que vous demandez n'existe pas.</p>
       </div>
       {/* Lien de retour vers la page d'accueil */}
-      <Link className="backlink" to="/">
+      <Link className="mainComponentMsgBacklink" to="/">
         Retourner à la page d&apos;accueil
       </Link>
     </main>

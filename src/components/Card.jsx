@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../Sass/Card.scss";
+import PropTypes from "prop-types";
 
 // Fonction Card qui affiche une carte avec un titre et une image
 export default function Card({ title, img, id }) {
@@ -12,3 +13,9 @@ export default function Card({ title, img, id }) {
     </Link>
   );
 }
+
+Card.propTypes = {
+  img: PropTypes.string,
+  id: PropTypes.string,
+  title: PropTypes.string,
+};
