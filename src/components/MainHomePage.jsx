@@ -3,9 +3,13 @@ import Datas from "../datas/DatasControlers.js";
 import Card from "../components/Card";
 import Cover from "../components/Cover";
 import coverImg from "../assets/pictures/HomePageCover.png";
+import { useEffect } from "react";
 
 // Composant MainHomePage qui affiche la page d'accueil principale
 export default function MainHomePage() {
+  useEffect(() => {
+    document.title = `Kasa - Page d'accueil`;
+  });
   return (
     <main className="mainHomePage">
       {/* Affichage de la couverture principale */}

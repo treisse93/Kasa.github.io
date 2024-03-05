@@ -4,6 +4,7 @@ import "../Sass/MainDetailsPage.scss";
 import Host from "./Host";
 import Carrousel from "./Carrousel";
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
 // Afficher la page détails
 export default function MainDetailsPage({ pageId }) {
@@ -19,6 +20,9 @@ export default function MainDetailsPage({ pageId }) {
     pictures,
   } = item;
   const { name, picture } = host;
+  useEffect(() => {
+    document.title = `Kasa - Locations`;
+  });
 
   return (
     <main className="mainDetailsPage">

@@ -2,6 +2,7 @@ import "../Sass/MainAbout.scss";
 import Cover from "../components/Cover";
 import img from "../assets/pictures/AboutCover.png";
 import Collapse from "./Collapse";
+import { useEffect } from "react";
 
 // Afficher la page "À propos"
 export default function MainAbout() {
@@ -17,6 +18,10 @@ export default function MainAbout() {
   const SecurityContent =
     "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.";
 
+  useEffect(() => {
+    document.title = `Kasa - A propos`;
+  });
+  
   return (
     <div className="mainAboutPage">
       <Cover img={img} type="about" />
