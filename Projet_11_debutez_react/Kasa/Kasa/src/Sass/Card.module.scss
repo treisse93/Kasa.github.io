@@ -1,0 +1,99 @@
+.container {
+    height: 340px;
+    width: 340px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: black;
+  }
+  
+  .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+  }
+  
+  .title {
+    color: black;
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      margin: 25px 0;
+      width: 100%;
+      height: 300px;
+    }
+    .card {
+      height: 23.6vw;
+      width: 23.6vw;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    #cardsSection {
+      grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+      background-color: #f6f6f6;
+      padding: 3.47vw;
+      border-radius: 25px;
+    }
+    .card {
+      height: 42vw;
+      width: 42vw;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #cardsSection {
+      grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+      column-gap: 0;
+      background-color: #f6f6f6;
+      border-radius: 25px;
+    }
+    .card {
+      height: 30vw;
+      width: 30vw;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      height: 23.6vw;
+      width: 23.6vw;
+    }
+  }
+  
+  .card {
+    position: relative;
+    border-radius: 10px;
+    height: 255px;
+    width: 100%;
+    margin: auto;
+    transform: scale(1);
+    transition: transform 200ms ease-out 100ms;
+  }
+  
+  .card .link {
+    display: block;
+    height: 100%;
+  }
+  
+  .card .h2 {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin: 0 20px 20px 20px;
+  }
+  
