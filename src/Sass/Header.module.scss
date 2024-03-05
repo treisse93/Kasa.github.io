@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 425px) {
+    .logoContainer {
+      max-width: 40%;
+    }
+    .logo {
+      width: 100%;
+    }
+    .container {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      margin-bottom: 50px;
+    }
+  }
+  

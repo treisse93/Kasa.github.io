@@ -1,0 +1,18 @@
+import "../Sass/Cover.scss";
+
+//affiche une couverture avec un titre et une image
+export default function Cover({ type, title, img }) {
+  // Affichage conditionnel du titre en fonction du type
+  const titleDisplay =
+    type === "main" ? <h1 className="titleH1">{title}</h1> : "";
+
+  // Détermination de la classe CSS en fonction du type
+  const clsName = type === "about" ? "aboutBanner" : "mainBanner";
+
+  return (
+    <section className={clsName}>
+      <div className="title">{titleDisplay}</div>
+      <img className={`coverImg ${type}`} src={img} alt={title} />
+    </section>
+  );
+}
