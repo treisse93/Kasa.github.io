@@ -3,6 +3,7 @@ import "../Sass/Rating.scss";
 import active from "../assets/pictures/activeStar.png";
 import inactive from "../assets/pictures/inactiveStar.png";
 import PropTypes from "prop-types";
+import id from "../datas/DatasControlers.js";
 
 // Afficher la note sous forme d'étoiles
 function Rating({ rate }) {
@@ -11,12 +12,7 @@ function Rating({ rate }) {
   // Afficher les étoiles actives
   for (let i = 0; i <= rate - 1; i += 1) {
     fullstars.push(
-      <img
-        
-        className="activeStars"
-        src={active}
-        alt={rate}
-      />
+      <img key={i} className="activeStars" src={active} alt={rate} />
     );
   }
 
@@ -27,6 +23,7 @@ function Rating({ rate }) {
     for (let i = 0; i < emptyNbr; i += 1) {
       fullstars.push(
         <img
+          key={i + rate}
           className="inactiveStars"
           src={inactive}
           alt={rate}
