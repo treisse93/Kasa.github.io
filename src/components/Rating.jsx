@@ -12,7 +12,7 @@ function Rating({ rate }) {
   for (let i = 0; i <= rate - 1; i += 1) {
     fullstars.push(
       <img
-        key={Math.random()}
+        
         className="activeStars"
         src={active}
         alt={rate}
@@ -27,7 +27,6 @@ function Rating({ rate }) {
     for (let i = 0; i < emptyNbr; i += 1) {
       fullstars.push(
         <img
-          key={Math.random()}
           className="inactiveStars"
           src={inactive}
           alt={rate}

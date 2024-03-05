@@ -15,6 +15,7 @@
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  border-radius: 25px;
 }
 
 .arrowActive {
@@ -34,6 +35,8 @@
   background-image: url("../assets/pictures/leftArrow.png");
   border: none;
   background-size: cover;
+  width: 45px;
+  height: 80px;
 }
 
 .next.arrowActive {
@@ -46,6 +49,8 @@
   background-image: url("../assets/pictures/rightArrow.png");
   border: none;
   background-size: cover;
+  width: 45px;
+  height: 80px;
 }
 
 .counter {
@@ -68,6 +73,9 @@
     border-radius: unset;
   }
 
+  .carrouselCoverImg {
+    border-radius: 10px;
+  }
   .prev.arrowActive {
     width: 24px;
     height: 40px;
