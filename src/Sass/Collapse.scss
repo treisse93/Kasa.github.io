@@ -44,8 +44,12 @@
   display: flex;
   flex-direction: column;
   padding: 20px 20px 20px 20px;
-  width: 100%;
   justify-content: center;
+}
+
+p.listItem {
+  margin: 0;
+  font-size: 18px;
 }
 
 @media (max-width: 425px) {

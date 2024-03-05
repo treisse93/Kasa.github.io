@@ -23,8 +23,14 @@ export default function Collapse({ content, name, type }) {
   };
 
   // Déterminer la classe en fonction du type passé en prop
-  const styleType =
-    type === "large" ? "large" : type === "medium" ? "medium" : "small";
+  let styleType;
+  if (type === "large") {
+    styleType = "large";
+  } else if (type === "medium") {
+    styleType = "medium";
+  } else {
+    styleType = "small";
+  }
 
   return (
     <div className={styleType}>
