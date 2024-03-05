@@ -62,5 +62,9 @@
 @media (max-width: 768px) {
   #cardsSection {
     background-color: transparent;
+    padding: 0;
+  }
+  .cardsContainer {
+    padding: 0;
   }
 }
