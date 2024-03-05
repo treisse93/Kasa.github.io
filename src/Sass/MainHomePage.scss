@@ -8,7 +8,7 @@
   margin: 40px 0;
   padding: 10px;
   background-color: #f6f6f6;
-  border-radius: 15px;
+  border-radius: 25px;
   padding-bottom: 15px;
 }
 
@@ -59,8 +59,8 @@
   }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 768px) {
   #cardsSection {
-    border-radius: unset;
+    background-color: transparent;
   }
 }

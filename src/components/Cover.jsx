@@ -12,8 +12,8 @@ export default function Cover({ type, title, img }) {
 
   return (
     <section className={clsName}>
-      <div className="title">{titleDisplay}</div>
-      <img className={`coverImg ${type}`} src={img} alt={title} />
+      <div className={`${clsName}Title`}>{titleDisplay}</div>
+      <img className={`${clsName}CoverImg${type}`} src={img} alt={title} />
     </section>
   );
 }

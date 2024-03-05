@@ -21,7 +21,7 @@
   background-color: black;
 }
 
-.coverImg {
+.mainBannerCoverImgmain {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -31,7 +31,26 @@
   z-index: 1;
 }
 
-.title {
+.aboutBannerCoverImgabout {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.7);
+  background: transparent;
+  z-index: 1;
+}
+
+.mainBannerTitle {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutBannerTitle {
   display: flex;
   position: absolute;
   width: 100%;
