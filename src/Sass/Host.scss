@@ -4,62 +4,60 @@
   margin-top: 15px;
 }
 
-.detailsHousing {
+.details__housing {
   display: flex;
   flex-direction: column;
 }
 
-.detailsHost {
+.details__host {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.detailsHostInfos {
+.details__host__infos {
   display: flex;
   align-items: center;
 }
 
-.detailsHousingTitle {
+.details__housing__title {
   display: flex;
   color: #ff6060;
-  font-family: Montserrat;
+
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
   margin: 0;
 }
-.detailsHousingLocation {
+.details__housing__location {
   display: flex;
   margin: 10px 0;
   color: #000;
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
 }
 
-.detailsHostInfosName {
+.details__host__infos__name {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-right: 20px;
   color: #ff6060;
   text-align: right;
-  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%; /* 25.668px */
 }
 
-.detailsHostInfosName p {
+.details__host__infos__name p {
   text-align: end;
   margin: 0;
 }
 
-.detailsHostInfosPicture {
+.details__host__infos__picture {
   display: flex;
   -o-object-fit: cover;
   object-fit: cover;
@@ -74,50 +72,49 @@
   display: flex;
 }
 
-.tagsContainer {
+.tags__container {
   display: flex;
-}
-
-@media (max-width: 425px) {
-  .detailsHousing {
-    width: 100%;
-  }
-
-  .tagsContainer {
-    margin: 10px 0;
-  }
-
-  .detailsHost {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .detailsHost {
-    order: 2;
-  }
-
-  .rating {
-    order: 1;
-  }
 }
 
 @media (max-width: 750px) {
   .details {
     flex-direction: column;
   }
-  .detailsHost {
+  .details__host {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .detailsHostInfosName {
+  .details__host__infos__name {
     font-size: 12px;
   }
-  .detailsHousingLocation {
+  .details__housing__location {
     font-size: 14px;
   }
-  .detailsHousingTitle {
+  .details__housing__title {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .details__housing {
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+
+  .tags__container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details__host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .collapse__header__name {
+    font-size: 0.7em;
   }
 }

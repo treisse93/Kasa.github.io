@@ -1,4 +1,4 @@
-.mainBanner {
+.main__banner {
   display: flex;
   margin: 0px auto;
   width: 100%;
@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.aboutBanner {
+.about__banner {
   display: flex;
   margin: 0px auto;
   width: 100%;
@@ -21,7 +21,7 @@
   background-color: black;
 }
 
-.mainBannerCoverImgmain {
+.main__banner__cover__img__main {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -31,7 +31,7 @@
   z-index: 1;
 }
 
-.aboutBannerCoverImgabout {
+.about__banner__cover__img__about {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -41,7 +41,7 @@
   z-index: 1;
 }
 
-.mainBannerTitle {
+.main__banner__title {
   display: flex;
   position: absolute;
   width: 100%;
@@ -50,7 +50,7 @@
   align-items: center;
 }
 
-.aboutBannerTitle {
+.about__banner__title {
   display: flex;
   position: absolute;
   width: 100%;
@@ -59,7 +59,7 @@
   align-items: center;
 }
 
-.titleH1 {
+.title__h1 {
   font-size: 24px;
   font-weight: 500;
   margin: 0;
@@ -70,31 +70,31 @@
 }
 
 @media (min-width: 476px) {
-  .titleH1 {
+  .title__h1 {
     margin-left: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .titleH1 {
+  .title__h1 {
     font-size: 38px;
   }
 }
 
 @media (min-width: 992px) {
-  .titleH1 {
+  .title__h1 {
     font-size: 48px;
   }
 }
 
 @media (max-width: 1240px) {
-  .aboutBanner {
+  .about__banner {
     border-radius: unset;
   }
 }
 
 @media (max-width: 425px) {
-  .mainBanner {
+  .main__banner {
     height: 100px;
     max-height: 100px;
     min-height: unset;
@@ -103,14 +103,14 @@
     border-radius: 15px;
   }
 
-  .aboutBanner {
+  .about__banner {
     border-radius: 15px;
     height: 100px;
     max-height: 100px;
     min-height: unset;
   }
 
-  .titleH1 {
+  .title__h1 {
     text-align: start;
     font-size: 24px;
     width: 80%;

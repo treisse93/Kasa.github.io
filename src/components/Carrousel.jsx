@@ -4,12 +4,18 @@ import left from "../assets/pictures/leftArrow.png";
 import right from "../assets/pictures/rightArrow.png";
 import PropTypes from "prop-types";
 
-// Carrousel d'images
+/**
+ * Carrousel d'images.
+ * @param {object} props - Les propriétés du composant.
+ * @param {string[]} props.pictures - Les URLs des images du carrousel.
+ * @param {string} props.title - Le titre du carrousel.
+ * @returns {JSX.Element} Le composant Carrousel.
+ */
 export default function Carrousel({ pictures, title }) {
   const [index, setIndex] = useState(0);
   const length = pictures.length;
 
-  // FImage précédente
+  // Image précédente
   const handlePrevious = () => {
     const newIndex = index - 1;
     setIndex(newIndex < 0 ? length - 1 : newIndex);
@@ -21,16 +27,20 @@ export default function Carrousel({ pictures, title }) {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
-  // Numérotation des images
+  // Numéroter les images
   const counter = `${index + 1}/${length}`;
   // Flèches de navigation seulement si au moins 2 images
-  const displayArrow = length <= 1 ? "arrowInactive" : "arrowActive";
+  const displayArrow = length <= 1 ? "arrow--inactive" : "arrow--active";
   // Numérotation des images seulement si au moins 2 images
-  const displayCounter = length > 1 ? "counter" : "hiddenCounter";
+  const displayCounter = length > 1 ? "counter" : "counter--hidden";
 
   return (
     <div className="carrousel">
-      <img className="carrouselCoverImg" src={pictures[index]} alt={title} />
+      <img
+        className="carrousel__cover__img"
+        src={pictures[index]}
+        alt={title}
+      />
       <button
         className={`prev ${displayArrow}`}
         src={left}

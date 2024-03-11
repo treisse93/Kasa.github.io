@@ -4,7 +4,10 @@ import img from "../assets/pictures/AboutCover.png";
 import Collapse from "./Collapse";
 import { useEffect } from "react";
 
-// Afficher la page "À propos"
+/**
+ * Afficher la page "À propos"
+ * @returns {JSX.Element} Le composant MainAbout.
+ */
 export default function MainAbout() {
   const respectContent =
     "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.";
@@ -21,11 +24,11 @@ export default function MainAbout() {
   useEffect(() => {
     document.title = `Kasa - A propos`;
   });
-  
+
   return (
-    <div className="mainAboutPage">
+    <div className="main__about__page">
       <Cover img={img} type="about" />
-      <div className="collapseContainer">
+      <div className="collapse__container">
         {/* Afficher les informations */}
         <Collapse type="large" name="Fiabilité" content={[FiabilityContent]} />
         <Collapse type="large" name="Respect" content={[respectContent]} />

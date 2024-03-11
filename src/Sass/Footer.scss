@@ -1,4 +1,4 @@
-.containerFooter {
+.container__footer {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -9,14 +9,14 @@
   padding-bottom: 29px;
 }
 
-.containerFooterLogo {
+.container__footer__logo {
   height: 40px;
   padding: 0;
   padding-bottom: 29px;
   font-family: "Montserrat", sans-serif;
 }
 
-.Copyrights {
+.copyrights {
   margin: 0;
   flex-direction: row;
   gap: 5px;
@@ -24,25 +24,25 @@
 }
 
 @media (max-width: 768px) {
-  .containerFooter {
+  .container__footer {
     margin: 0 -20px;
     padding-bottom: 58px;
   }
 }
 
 @media (min-width: 768px) {
-  .containerFooter {
+  .container__footer {
     justify-content: end;
   }
 
-  .Copyrights {
+  .copyrights {
     flex-direction: row;
     gap: 5px;
   }
 }
 
 @media (min-width: 992px) {
-  .Copyrights {
+  .copyrights {
     font-size: 1.66vw;
   }
 }

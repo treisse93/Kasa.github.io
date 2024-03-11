@@ -1,9 +1,9 @@
-.mainAboutPage {
+.main__about__page {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding-bottom: 50px;
-  &aboutBanner {
+  &about__banner {
     position: relative;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
   }
 }
 
-.collapseContainer {
+.collapse__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,28 +38,28 @@
 }
 
 @media (max-width: 425px) {
-  .mainAboutPage {
+  .main__about__page {
     margin: 0 20px;
   }
 }
 
 @media (min-width: 476px) {
-  .aboutBanner {
+  .about__banner {
     justify-content: center;
   }
 }
 
 @media (min-width: 992px) {
-  .aboutBanner {
+  .about__banner {
     height: 223px;
   }
-  .aboutBanner img {
+  .about__banner img {
     height: 223px;
   }
 }
 
 @media (max-width: 1240px) {
-  .aboutBanner {
+  .about__banner {
     border-radius: 25px;
   }
 }

@@ -1,4 +1,4 @@
-.mainComponent {
+.main__component {
   height: 100%;
   color: #ff6060;
   display: flex;
@@ -10,7 +10,7 @@
   margin-bottom: 100px;
 }
 
-.mainComponentMsg {
+.main__component__msg {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,49 +18,49 @@
   width: 100%;
 }
 
-.mainComponentMsgErrorText {
+.main__component__msg__error__text {
   display: flex;
   font-size: 160px;
   width: 100%;
   justify-content: center;
 }
 
-.mainComponentMsgOups {
+.main__component__msg__oups {
   text-align: center;
   font-size: 36px;
   width: 90%;
 }
 
-.mainComponentMsgBacklink {
+.main__component__msg__backlink {
   margin-top: 50px;
   color: black;
 }
 
-.mainComponentMsgBacklink:visited {
+.main__component__msg__backlink:visited {
   color: black;
 }
 
 @media (max-width: 425px) {
-  .mainComponent {
+  .main__component {
     margin: 0 20px;
     justify-content: space-around;
     align-items: center;
   }
 
-  .mainComponentMsg {
+  .main__component__msg {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  .mainComponentMsgOups {
+  .main__component__msg__oups {
     text-align: center;
     font-size: 18px;
     width: 90%;
   }
 
-  .mainComponentMsgErrorText {
+  .main__component__msg__error__text {
     font-size: 96px;
   }
 }

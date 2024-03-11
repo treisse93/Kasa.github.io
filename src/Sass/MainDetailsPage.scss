@@ -1,9 +1,9 @@
-.mainDetailsPage {
+.main__details__page {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.fullContent {
+.full__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -12,14 +12,14 @@
 }
 
 @media (max-width: 750px) {
-  .fullContent {
+  .full__content {
     flex-direction: column;
     align-items: center;
   }
 }
 
 @media (max-width: 425px) {
-  .mainDetailsPage {
+  .main__details__page {
     margin: 0 20px;
   }
 }

@@ -5,25 +5,28 @@ import Cover from "../components/Cover";
 import coverImg from "../assets/pictures/HomePageCover.png";
 import { useEffect } from "react";
 
-// Composant MainHomePage qui affiche la page d'accueil principale
+/**
+ * Afficher la page d'accueil principale
+ * @returns {JSX.Element} Le composant MainHomePage.
+ */
 export default function MainHomePage() {
   useEffect(() => {
     document.title = `Kasa - Page d'accueil`;
   });
   return (
-    <main className="mainHomePage">
-      {/* Affichage de la couverture principale */}
+    <main className="main__home__page">
+      {/* Afficher la couverture principale */}
       <Cover
         type="main"
         title="Chez vous, partout et ailleurs"
         img={coverImg}
       />
-      {/* Affichage des cartes à partir des données fournies */}
-      <section id="cardsSection">
-        <div className="cardsContainer">
-          {Datas.map((item, index) => (
+      {/* Afficher des cartes à partir des données fournies */}
+      <section id="cards__section">
+        <div className="cards__container">
+          {Datas.map((item) => (
             <Card
-              key={index}
+              key={item.id}
               title={item.title}
               description={item.description}
               id={item.id}

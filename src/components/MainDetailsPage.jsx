@@ -6,7 +6,12 @@ import Carrousel from "./Carrousel";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 
-// Afficher la page détails
+/**
+ * Afficher la page détails
+ * @param {object} props - Les propriétés du composant.
+ * @param {string} props.pageId - L'identifiant de la page de détails.
+ * @returns {JSX.Element} Le composant MainDetailsPage.
+ */
 export default function MainDetailsPage({ pageId }) {
   const item = Datas.find((data) => data.id === pageId);
   const {
@@ -25,7 +30,7 @@ export default function MainDetailsPage({ pageId }) {
   });
 
   return (
-    <main className="mainDetailsPage">
+    <main className="main__details__page">
       {/* carrousel d'images */}
       <Carrousel title={title} pictures={[...pictures]} />
       {/* informations de l'hôte */}
@@ -37,8 +42,8 @@ export default function MainDetailsPage({ pageId }) {
         hostname={name}
         hostPicture={picture}
       />
-      <div className="fullContent">
-        {/* la description et les équipements sous forme collapse */}
+      <div className="full__content">
+        {/* description et équipements sous forme collapse */}
         <Collapse type="medium" name="Description" content={[description]} />
         <Collapse type="medium" name="Équipements" content={equipments} />
       </div>
@@ -47,5 +52,5 @@ export default function MainDetailsPage({ pageId }) {
 }
 
 MainDetailsPage.propTypes = {
-  pageId: PropTypes.string,
+  pageId: PropTypes.string.isRequired,
 };
