@@ -18,7 +18,7 @@ nav a {
   color: black;
   text-transform: none;
   text-decoration: none;
-  &:active {
+  &.active {
     text-decoration: underline;
   }
 }
