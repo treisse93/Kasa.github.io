@@ -1,4 +1,4 @@
-import "../Sass/MainHomePage.scss";
+import "../Sass/Layout/MainHomePage.scss";
 import Datas from "../datas/DatasControlers.js";
 import Card from "../components/Card";
 import Cover from "../components/Cover";

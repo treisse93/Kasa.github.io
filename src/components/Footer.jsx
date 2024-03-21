@@ -1,4 +1,4 @@
-import "../Sass/Footer.scss";
+import "../Sass/Components/Footer.scss";
 import img from "../assets/Logos/FooterLogo.png";
 
 /**

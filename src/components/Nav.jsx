@@ -1,4 +1,4 @@
-import "../Sass/Nav.scss";
+import "../Sass/Components/Nav.scss";
 import { NavLink } from "react-router-dom";
 
 /**

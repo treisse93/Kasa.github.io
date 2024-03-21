@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Sass/MainError.scss";
+import "../Sass/Layout/MainError.scss";
 import { useEffect } from "react";
 
 /**

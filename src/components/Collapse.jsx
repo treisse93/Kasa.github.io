@@ -1,6 +1,6 @@
 import { useState } from "react";
 import arrowUp from "../assets/pictures/ArrowUp.png";
-import "../Sass/Collapse.scss";
+import "../Sass/Components/Collapse.scss";
 import PropTypes from "prop-types";
 // Afficher un élément pouvant être replié/déplié
 /**

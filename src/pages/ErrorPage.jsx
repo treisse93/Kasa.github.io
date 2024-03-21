@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainErrorPage from "../components/MainError";
-import "../Sass/ErrorPage.scss";
+import "../Sass/Pages/ErrorPage.scss";
 
 export default function ErrorPage() {
   return (

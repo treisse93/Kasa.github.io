@@ -1,5 +1,5 @@
 import Tag from "./Tags";
-import "../Sass/Host.scss";
+import "../Sass/Layout/Host.scss";
 import Rating from "./Rating";
 import PropTypes from "prop-types";
 

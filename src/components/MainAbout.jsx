@@ -1,4 +1,4 @@
-import "../Sass/MainAbout.scss";
+import "../Sass/Layout/MainAbout.scss";
 import Cover from "../components/Cover";
 import img from "../assets/pictures/AboutCover.png";
 import Collapse from "./Collapse";

@@ -1,6 +1,6 @@
 import Datas from "../datas/DatasControlers.js";
 import Collapse from "./Collapse";
-import "../Sass/MainDetailsPage.scss";
+import "../Sass/Layout/MainDetailsPage.scss";
 import Host from "./Host";
 import Carrousel from "./Carrousel";
 import PropTypes from "prop-types";

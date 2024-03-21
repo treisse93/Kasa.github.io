@@ -1,4 +1,4 @@
-import "../Sass/Carrousel.scss";
+import "../Sass/Layout/Carrousel.scss";
 import React, { useState } from "react";
 import left from "../assets/pictures/leftArrow.png";
 import right from "../assets/pictures/rightArrow.png";

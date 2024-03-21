@@ -1,4 +1,4 @@
-import "../Sass/Tags.scss";
+import "../Sass/Layout/Tags.scss";
 import PropTypes from "prop-types";
 
 /**

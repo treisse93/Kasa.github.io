@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import "../Sass/Header.scss";
+import "../Sass/Components/Header.scss";
 import img from "../assets/Logos/HeaderLogo.png";
 import { Link } from "react-router-dom";
 

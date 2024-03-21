@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Sass/Card.scss";
+import "../Sass/Components/Card.scss";
 import PropTypes from "prop-types";
 
 /**

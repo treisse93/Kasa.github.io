@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Navigate, useParams } from "react-router-dom";
 import MainDetailsPage from "../components/MainDetailsPage";
-import "../Sass/DetailPage.scss";
+import "../Sass/Pages/DetailPage.scss";
 import Datas from "../datas/DatasControlers.js";
 
 // Afficher une page en fonction de son ID

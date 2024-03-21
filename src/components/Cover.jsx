@@ -1,4 +1,4 @@
-import "../Sass/Cover.scss";
+import "../Sass/Components/Cover.scss";
 import PropTypes from "prop-types";
 
 /**

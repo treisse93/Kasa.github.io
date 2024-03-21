@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sass/Rating.scss";
+import "../Sass/Layout/Rating.scss";
 import active from "../assets/pictures/activeStar.png";
 import inactive from "../assets/pictures/inactiveStar.png";
 import PropTypes from "prop-types";
