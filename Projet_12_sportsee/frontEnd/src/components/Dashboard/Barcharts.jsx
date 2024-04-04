@@ -101,8 +101,8 @@ export default function BarchartContainer({ activities }) {
         width="100%"
         height="100%"
         data={activities}
-        barGap={5}
-        barSize={6}
+        barGap={7}
+        barSize={10}
         margin={{ top: 20, bottom: 10, left: 40, right: -20 }}
       >
         <CartesianGrid
